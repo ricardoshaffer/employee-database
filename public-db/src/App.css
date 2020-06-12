@@ -10,6 +10,19 @@ td {
 .table {
   width: responsive;
 }
+.btn-custom {
+  background-color: #61dafb !important;
+}
+.btn {
+  color: #ffffff !important;
+}
+.button{
+  padding: 5px;
+}
+.btn-custom:hover{
+  color: #ffffff;
+  background-color: #7f70ff !important;
+}
 .heading {
   font-weight: 800;
   font-size: 1.2rem;
