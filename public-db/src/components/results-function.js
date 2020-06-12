@@ -21,13 +21,13 @@ class Results extends Component {
 
     sortByName = () => {
         const filtereds = this.state.employeeSort;
-        if (this.state.order === "asc") {
+        if (this.state.order === "ascending") {
             const sorteds = filtereds.sort((a, b) => (a.name.first > b.name.first) ? 1 : -1)
             console.log(sorteds)
 
             this.setState({
                 employeeSort: sorteds,
-                order: "desc"
+                order: "descending"
             })
         } else {
 
@@ -36,7 +36,7 @@ class Results extends Component {
 
             this.setState({
                 employeeSort: sorteds,
-                order: "asc"
+                order: "ascending"
             })
 
         }
