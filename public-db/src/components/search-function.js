@@ -4,9 +4,9 @@ import "../App.css";
 // Using the datalist element we can create autofill suggestions based on the props.breeds array
 function SearchForm(props) {
   return (
-    <form className="search">
+    <form className="search sticky-top">
       <div className="form-group">
-        <label htmlFor="employees">Employee Data:</label>
+        <label htmlFor="employees">search:</label>
         <input
             onChange={props.handleInputChange}
             value={props.value}
@@ -17,7 +17,7 @@ function SearchForm(props) {
             className="inputBox"
             placeholder="first name"
         />
-        <button type="submit" onClick={props.handleSearch} className="btn btn-success">
+        <button type="submit" onClick={props.handleSearch} className="btn btn-custom">
           Search
         </button>
       </div>

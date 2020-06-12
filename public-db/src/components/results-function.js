@@ -22,20 +22,19 @@ class Results extends Component {
     sortByName = () => {
         const filtereds = this.state.employeeSort;
         if (this.state.order === "ascending") {
-            const sorteds = filtereds.sort((a, b) => (a.name.first > b.name.first) ? 1 : -1)
-            console.log(sorteds)
+            const sortFunction = filtereds.sort((a, b) => (a.name.first > b.name.first) ? 1 : -1)
+            console.log(sortFunction)
 
             this.setState({
-                employeeSort: sorteds,
+                employeeSort: sortFunction,
                 order: "descending"
             })
         } else {
 
-            const sorteds = filtereds.sort((a, b) => (a.name.first > b.name.first) ? -1 : 1)
-            console.log(sorteds)
+            const sortFunction = filtereds.sort((a, b) => (a.name.first > b.name.first) ? -1 : 1)
 
             this.setState({
-                employeeSort: sorteds,
+                employeeSort: sortFunction,
                 order: "ascending"
             })
 
