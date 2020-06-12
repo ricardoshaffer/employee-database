@@ -1,0 +1,95 @@
+.email a{
+  color: #fff;
+}
+.email a:hover{
+  color: #61dafb;
+}
+td {
+  color: #fff;
+}
+.table {
+  width: responsive;
+}
+.heading {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.employee-row.sticky-top{
+  padding-top: 30px !important;
+}
+.form-group {
+  float:right;
+}
+.custom-nav{
+  box-shadow:3px 0px 3px rgba(0,0,0,0.5);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.hover-pointer {
+  cursor:pointer;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media(min-width: 500px){
+  .row {
+   min-width: 600px !important;
+  }
+  .form-group{
+    padding-bottom:35px;
+    padding-top: 10px;
+  }
+}
+@media(max-width: 499px){
+  .navbar-brand{
+   display: none !important ;
+  }
+  .form-group{
+    padding-bottom:35px;
+    padding-top: 10px;
+  }
+  .custom-nav{
+    height: 70px;
+  }
+  .col {
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar-toggler-icon {
+    display:none !important;
+  }
+}
